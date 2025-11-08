@@ -78,7 +78,7 @@ export class Bird {
 
         if (isFarEnoughRight && isLowEnough && isFarEnoughLeft && isHighEnough) {
             console.log("Hit top pipe!");
-            location.reload(); // 🔁 Reload page when hit
+            location.reload(); //  Reload page when hit
             return true;
         }
 
@@ -90,7 +90,7 @@ export class Bird {
 
         if (isFarEnoughRight && isLowEnough && isFarEnoughLeft && isHighEnough) {
             console.log("Hit bottom pipe!");
-            location.reload(); // 🔁 Reload page when hit
+            location.reload(); //  Reload page when hit
             return true;
         }
     if (this.y + this.height >= this.canvas.height || this.y <= 0) {
