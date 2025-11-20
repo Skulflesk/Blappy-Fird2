@@ -11,6 +11,8 @@
 let canvas = document.getElementById("myCanvas2");
 let pencil = canvas.getContext("2d"); // This gives you the drawing context, like a pencil
 
+
+
 // Challenge 2: Draw a rectangle
 // Draw a filled rectangle at x=30, y=30 with width=100, height=50
 // Fill it with the color "#"!

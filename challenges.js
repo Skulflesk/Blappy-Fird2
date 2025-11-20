@@ -4,6 +4,26 @@ import { Bird } from "./bird.js";
 let canvas = document.getElementById("myCanvas");
 let pencil = canvas.getContext("2d"); // This gives you the drawing context, like a pencil
 
+let itemSprite = document.getElementById("coin");
+
+let item = {
+    x: 400,
+    y: 300,
+    width: 50,
+    height: 50,
+    draw: function() {
+        pencil.drawImage(itemSprite, this.x, this.y, this.width, this.height);
+    }
+};
+
+function getDistance(a, b) {
+    let dx = (a.x + a.width/2) - (b.x + b.width/2);
+    let dy = (a.y + a.height/2) - (b.y + b.height/2);
+    return Math.sqrt(dx * dx + dy * dy);
+}
+
+
+
 
 function gameLoop() {
     
